@@ -1,0 +1,17 @@
+# This is a config for E2B sandbox template.
+# You can use template ID (uc3ge5k66vb84bea4i13) or template name (vibe-nextjs-bgf) to create a sandbox:
+
+# Python SDK
+# from e2b import Sandbox, AsyncSandbox
+# sandbox = Sandbox("vibe-nextjs-bgf") # Sync sandbox
+# sandbox = await AsyncSandbox.create("vibe-nextjs-bgf") # Async sandbox
+
+# JS SDK
+# import { Sandbox } from 'e2b'
+# const sandbox = await Sandbox.create('vibe-nextjs-bgf')
+
+team_id = "9df6e5bc-b39c-42ba-aeea-5904a1f6ef1f"
+start_cmd = "/compile_page.sh"
+dockerfile = "e2b.Dockerfile"
+template_name = "vibe-nextjs-bgf"
+template_id = "uc3ge5k66vb84bea4i13"
