@@ -27,9 +27,6 @@ export default function Home() {
       >
         Invoke Background Job
       </Button>
-      <button className='bg-blue-500 bg-opacity-30 backdrop-blur-md hover:bg-opacity-50 text-white font-semibold py-2 px-4 rounded-lg shadow-lg transition duration-300 ease-in-out'>
-        Log In
-      </button>
     </div>
   );
 }
