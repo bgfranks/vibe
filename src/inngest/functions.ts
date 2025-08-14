@@ -177,7 +177,7 @@ export const codeAgentFunction = inngest.createFunction(
         return await prisma.message.create({
           data: {
             projectId: event.data.projectId,
-            content: 'Something went wrong, please try again.',
+            content: 'Something went wrong. Please try again.',
             role: 'ASSISTANT',
             type: 'ERROR',
           },
