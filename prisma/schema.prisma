@@ -33,7 +33,7 @@ model Message {
   role      MessageRole
   type      MessageType
   createdAt DateTime    @default(now())
-  udpatedAt DateTime    @updatedAt
+  updatedAt DateTime    @updatedAt
 
   projectId String
   project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)
@@ -51,5 +51,5 @@ model Fragment {
   files      Json
 
   createdAt DateTime @default(now())
-  udpatedAt DateTime @updatedAt
+  updatedAt DateTime @updatedAt
 }
