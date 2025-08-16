@@ -1,4 +1,4 @@
-import { Fragment, MessageRole, MesssageType } from '@/generated/prisma';
+import { Fragment, MessageRole, MessageType } from '@/generated/prisma';
 import UserMessage from './user-message';
 import AssistantMessage from './assistant-message';
 
@@ -9,7 +9,7 @@ interface MesaageCardProps {
   createdAt: Date;
   isActiveFragment: boolean;
   onFragmentClick: (fragement: Fragment) => void;
-  type: MesssageType;
+  type: MessageType;
 }
 
 const MessageCard = ({

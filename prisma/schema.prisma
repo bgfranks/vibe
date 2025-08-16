@@ -22,18 +22,18 @@ enum MessageRole {
   ASSISTANT
 }
 
-enum MesssageType {
+enum MessageType {
   RESULT
   ERROR
 }
 
 model Message {
-  id        String       @id @default(uuid())
+  id        String      @id @default(uuid())
   content   String
   role      MessageRole
-  type      MesssageType
-  createdAt DateTime     @default(now())
-  udpatedAt DateTime     @updatedAt
+  type      MessageType
+  createdAt DateTime    @default(now())
+  udpatedAt DateTime    @updatedAt
 
   projectId String
   project   Project @relation(fields: [projectId], references: [id], onDelete: Cascade)

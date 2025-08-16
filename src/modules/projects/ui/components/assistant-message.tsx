@@ -1,4 +1,4 @@
-import { Fragment, MesssageType } from '@/generated/prisma';
+import { Fragment, MessageType } from '@/generated/prisma';
 import { cn } from '@/lib/utils';
 import { format } from 'date-fns';
 import { ChevronRightIcon, Code2Icon } from 'lucide-react';
@@ -10,7 +10,7 @@ interface AssistantMessageProps {
   createdAt: Date;
   isActiveFragment: boolean;
   onFragmentClick: (fragement: Fragment) => void;
-  type: MesssageType;
+  type: MessageType;
 }
 
 const AssistantMessage = ({
